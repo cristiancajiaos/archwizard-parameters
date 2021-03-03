@@ -1,3 +1,49 @@
 <main>
-  <p>Main</p>
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <ui-switch [(ngModel)]="enable"></ui-switch>
+      <hr>
+      <p>Enable: {{enable}}</p>
+    </div>
+    <div class="col-12 col-lg-6">
+      <aw-wizard>
+        <aw-wizard-step stepTitle="Title of step 1">
+          <div>
+            Content of Step 1
+          </div>
+
+          <div class="d-flex justify-content-end align-items-center">
+            <button type="button" class="btn btn-success" awNextStep>
+              Go to next Step <i class="fas fa-arrow-right fa-fw"></i>
+            </button>
+          </div>
+
+        </aw-wizard-step>
+        <aw-wizard-step stepTitle="Title of step 2">
+          <div>
+            Content of Step 2
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <button type="button" class="btn btn-danger" awPreviousStep>
+              <i class="fas fa-arrow-left fa-fw"></i> Go to previous step
+            </button>
+            <button type="button" class="btn btn-success" awNextStep>
+              Go to next step <i class="fas fa-arrow-right fa-fw"></i>
+            </button>
+          </div>
+
+        </aw-wizard-step>
+        <aw-wizard-step stepTitle="Title of step 3">
+          <div>
+             Content of Step 3
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <button type="button" class="btn btn-danger" awPreviousStep>
+              <i class="fas fa-arrow-left fa-fw"></i> Go to previous Step
+            </button>
+          </div>
+        </aw-wizard-step>
+      </aw-wizard>
+    </div>
+  </div>
 </main>

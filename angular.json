@@ -33,6 +33,8 @@
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "./node_modules/angular-archwizard/styles/archwizard.scss",
+              "./node_modules/ngx-ui-switch/ui-switch.component.css",
               "src/styles.scss"
             ],
             "scripts": []
