@@ -11,6 +11,8 @@ import { MainComponent } from './layout/main/main.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { LayoutComponent } from './layout/layout.component';
+import { StepsComponent } from './layout/main/steps/steps.component';
+import { FiltersComponent } from './layout/main/filters/filters.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { LayoutComponent } from './layout/layout.component';
     MainComponent,
     HeaderComponent,
     FooterComponent,
-    LayoutComponent
+    LayoutComponent,
+    StepsComponent,
+    FiltersComponent
   ],
   imports: [
     BrowserModule,
